@@ -1,0 +1,14 @@
+<div class="card" >
+    <img src="{{pokemon?.image}}" class="card-img-top" alt="..." style="width:8em">
+    <div class="card-body">
+    <h5 class="card-title">{{pokemon?.name}}</h5>
+    <p>Attaque :{{pokemon?.stats?.attack}}</p>
+    <p>Defense :{{pokemon?.stats?.defense}}</p>
+    <p>hp:{{pokemon?.stats?.HP}}</p>
+    <p>Speciale Attaque :{{pokemon?.stats?.special_attack}}</p>
+    <p>Defense :{{pokemon?.stats?.special_defense}}</p>
+    <div>Types </div>
+        <span *ngFor="let type of pokemon?.apiTypes"><img src="{{type.image}}" alt="" style="width:2em"></span>
+        
+    </div>
+</div>

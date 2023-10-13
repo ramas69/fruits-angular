@@ -10,6 +10,8 @@ import { ListeFruitComponent } from './liste-fruit/liste-fruit.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { UserComponent } from './user/user.component';
+import { PokemoComponent } from './pokemo/pokemo.component';
+import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { UserComponent } from './user/user.component';
     FooterComponent,
     ListeFruitComponent,
     FruitDetailComponent,
-    UserComponent
+    UserComponent,
+    PokemoComponent,
+    PokemonDetailComponent
   ],
   imports: [
     BrowserModule,
