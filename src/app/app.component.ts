@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Category } from './user';
+
 enum Couleur {Bleu = 10, Blanc, Rouge = 5, Noire};
 
 @Component({

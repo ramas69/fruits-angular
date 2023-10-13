@@ -1,5 +1,6 @@
-export interface Category  {
-id:number,
-name?:string
-
+export interface IUser{
+    id:number,
+    name:string,
+    username:string,
+    email:string
 }
