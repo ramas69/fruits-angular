@@ -1,0 +1,20 @@
+<h2>Ajouter un fruit</h2>
+
+<form #form="ngForm"   (ngSubmit) ="onSubmit(form)" >
+
+    <input type="text" [(ngModel)]="titre" name="titre">
+    <input type="text"[(ngModel)]="image" name="image">
+  <button >Ajouter</button>
+
+
+</form>
+
+<h2>Inscription</h2>
+
+<form #formI ="ngForm" (ngSubmit)="envoiForm(formI)" >
+    <input type="email" [(ngModel)]="email" name="email">
+    <div>{{messageEmail}}</div>
+    <input type="password"[(ngModel)]="password" name="password">
+    <div >{{messagePassword}}  </div>
+    <button >Ajouter</button>
+</form>

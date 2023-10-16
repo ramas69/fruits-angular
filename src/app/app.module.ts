@@ -12,6 +12,9 @@ import { FruitDetailComponent } from './fruit-detail/fruit-detail.component';
 import { UserComponent } from './user/user.component';
 import { PokemoComponent } from './pokemo/pokemo.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
+import { CreateFruitComponent } from './create-fruit/create-fruit.component';
+import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,15 @@ import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.componen
     FruitDetailComponent,
     UserComponent,
     PokemoComponent,
-    PokemonDetailComponent
+    PokemonDetailComponent,
+    CreateFruitComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

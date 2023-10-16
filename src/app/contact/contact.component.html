@@ -1,0 +1,11 @@
+<h2>Formulaire de contact</h2>
+
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <p>{{messageVide}}</p>
+    <input type="text" name="nom" placeholder="nom" [(ngModel)]="nom" >
+    <input type="text" name="prenom" placeholder="prenom"  [(ngModel)]="prenom">
+    <input type="text" name="objet" placeholder="objet"  [(ngModel)]="objet" >
+    <textarea placeholder="votre message" name="message" [(ngModel)]="message" ></textarea>
+    <p>{{messageLong}}</p>
+    <button>Envoyer</button>
+</form>
