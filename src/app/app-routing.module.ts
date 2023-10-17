@@ -9,6 +9,7 @@ import { PokemoComponent } from './pokemo/pokemo.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { CreateFruitComponent } from './create-fruit/create-fruit.component';
 import { ContactComponent } from './contact/contact.component';
+import { CreateFruitReactiveComponent } from './create-fruit-reactive/create-fruit-reactive.component';
 
 
 
@@ -17,6 +18,7 @@ const routes:Routes = [
 {path:"fruits", component:ListeFruitComponent},
 {path:"pokemons", component:PokemoComponent},
 {path:"fruits/create", component:CreateFruitComponent},
+{path:"fruits/new", component:CreateFruitReactiveComponent},
 {path:"contact", component:ContactComponent},
 {path:"users", component:UserComponent},
 {path:"fruits/:id", component:FruitDetailComponent},

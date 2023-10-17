@@ -28,4 +28,9 @@ export class FruitService {
     }
   }
 
+  newFruit(fruit:IFruit){
+   // let id:number = this.fruits.length;
+    fruitMock.push(fruit)
+  }
+
 }

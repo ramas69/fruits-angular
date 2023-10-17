@@ -13,6 +13,7 @@ export class UserService {
   constructor(private http:HttpClient) { }
 
   fetchAll(){
-    return this.http.get<IUser[]>(this.url)
+   return this.http.get<IUser[]>(this.url)
   }
+
 }

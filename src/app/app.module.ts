@@ -13,8 +13,9 @@ import { UserComponent } from './user/user.component';
 import { PokemoComponent } from './pokemo/pokemo.component';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 import { CreateFruitComponent } from './create-fruit/create-fruit.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact/contact.component';
+import { CreateFruitReactiveComponent } from './create-fruit-reactive/create-fruit-reactive.component';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,15 @@ import { ContactComponent } from './contact/contact.component';
     PokemoComponent,
     PokemonDetailComponent,
     CreateFruitComponent,
-    ContactComponent
+    ContactComponent,
+    CreateFruitReactiveComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

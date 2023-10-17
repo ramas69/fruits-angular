@@ -1,0 +1,7 @@
+<h2>Fruit Formulaire Reactive</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName ="name" >
+    <input type="text" formControlName ="image" >
+    <button> Ajouter un fruit</button>
+</form>

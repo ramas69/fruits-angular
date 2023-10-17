@@ -1,8 +1,15 @@
 
-
+<div>
+    <form [formGroup]="form"  (ngSubmit)="onSubmit()">
+        <input type="text" formControlName="name">
+        <input type="text" formControlName="image">
+        <button>Ajouter</button>
+    </form>
+</div>
 <div class="row">
-    <div class="col-md-3" *ngFor="let fruit of produits">
+    <div class="col-md-3" *ngFor="let fruit of produits let i= index">
         <div class="card" >
+            <span>{{i}}</span>
             <img src="{{fruit.image}}" class="card-img-top" alt="...">
             <div class="card-body">
             <h5 class="card-title">{{fruit.name}}</h5>
@@ -12,6 +19,8 @@
         </div>
     </div>
 </div>
+
+
 
 
 
